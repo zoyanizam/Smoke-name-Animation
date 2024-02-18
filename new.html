@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Smoke Animation</title>
+        <style type="text/css">
+        body{
+            background: black;
+        }
+        section{
+            height: 100vh;
+        }
+        video{
+            object-fit: cover;
+            margin-left: 10px;
+        }
+        h1{
+            position: absolute;
+            top: 35%;
+            left: 20%;
+            color: #D0A2F7;
+            font-size: 5em;
+            letter-spacing: 0.2em;
+        }
+        h1 span{
+            opacity: 0;
+            display: inline-block;
+            animation: animate 1s linear forwards;
+        }
+        @keyframes animate {
+            0%{
+                opacity: 0;
+                transform: rotateY(90deg);
+                filter: blur(10PX);
+            }
+            100%{
+                opacity: 1;
+                transform: rotateY(0deg);
+                filter: blur(0);
+            }
+        }
+        h1 span:nth-child(1){
+            animation-delay: 1s;
+        }
+        h1 span:nth-child(2){
+            animation-delay:2s;
+        }
+        h1 span:nth-child(3){
+            animation-delay:2.5s;
+        }
+        h1 span:nth-child(4){
+            animation-delay:3s;
+        }
+        h1 span:nth-child(5){
+            animation-delay:3.5s;
+        }
+        h1 span:nth-child(6){
+            animation-delay:3.75s;
+        }
+        h1 span:nth-child(7){
+            animation-delay:4s ;
+        }
+        h1 span:nth-child(8){
+            animation-delay:4.5s;
+        }
+        h1 span:nth-child(9){
+            animation-delay:4.75s;
+        }
+        </style>
+    </head>
+    <body>
+        <section>
+            <VIdeo src="smoke4.mp4" autoplay muted></VIdeo>
+            <h1>
+                <span>Z</span>
+                <span>O</span>
+                <span>Y</span>
+                <span>A</span>
+                <span>N</span>
+                <span>I</span>
+                <span>Z</span>
+                <span>A</span>
+                 <SPan>M</SPan>
+            </h1>
+        </section>
+    </body>
+</html>
